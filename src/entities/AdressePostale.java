@@ -12,6 +12,10 @@ public class AdressePostale {
 		libelleRue = nvLibelleRue;
 		codePostal = nvCodePostal;
 		ville = nvVille;
+	}	
+		
+	public String toString() {
+			return numeroRue + " " + libelleRue + " " + codePostal + " " + ville;
 		
 	}
 }

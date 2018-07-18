@@ -12,4 +12,34 @@ public class Personne {
 		adresse = nvAdresse;
 		
 	}
+	
+	public String getIdentite() {
+		return prenomPersonne + " "+nomPersonne.toUpperCase();
+	}
+	
+	public String getNom() {
+		return nomPersonne;
+	}
+	
+	public String getPrenom() {
+		return prenomPersonne;
+		
+	}
+	
+	public AdressePostale getAdressePostale() {
+		return adresse;
+	}
+	
+	public void setNom(String nvNomPersonne) {
+		nomPersonne = nvNomPersonne;
+	}
+	
+	public void setPrenom(String nvPrenomPersonne) {
+		prenomPersonne = nvPrenomPersonne;
+	}
+	
+	public void setAdressePostale(AdressePostale nvAdresse) {
+		adresse = nvAdresse;
+	}
 }
+
