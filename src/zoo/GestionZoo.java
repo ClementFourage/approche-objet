@@ -7,18 +7,20 @@ public class GestionZoo {
 		
 		//écriture simple pour ajouter une animal
 		
-		Animal an1 = new Animal("Go", "Boa");
+		//Animal an1 = new Animal("Go", "Boa");
 		
-		Zone reptiles = zoo1.getFermeAuxReptiles();
-		reptiles.addAnimal(an1);
+		//Zone reptiles = zoo1.getFermeAuxReptiles();
+		//reptiles.addAnimal(an1);
 		
 		
 		//écriture utilisée en entreprise
 		
-		zoo1.getSavaneAfricaine().addAnimal(new Animal("Toto", "Taureau"));
-		zoo1.getCarnivore().addAnimal(new Animal("Kiki", "Lion"));
+		zoo1.addAnimal(new Volatiles("bidule","oiseau","OMNIVORE"));
+		zoo1.addAnimal(new Reptiles("truc","croco","CARNIVORE"));
+		zoo1.addAnimal(new Poissons("nemo","poisson clown","HERBIVORE"));
+		zoo1.addAnimal(new Mammiferes("coco","girafe","HERBIVORE"));
 		
-		System.out.println(zoo1.getCarnivore().getCompteur());
+		zoo1.afficher();
 	}
 	
 }

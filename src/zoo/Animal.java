@@ -1,18 +1,24 @@
 package zoo;
 
-public class Animal {
+public abstract class Animal {
 
 	//Attributs
 	private String nom;
 	private String type;
+	private String regimesAlimentaires;
+	
 
 	//Constructeur
-	public Animal(String nvNom, String nvType){
+	public Animal(String nvNom, String nvType, String nvRegimesAlimentaires){
 		super();
 		this.nom = nvNom;
 		this.type = nvType;
+		this.regimesAlimentaires = nvRegimesAlimentaires;
 	}
 
+	public abstract String getFamille();
+	
+	
 	public String getNom() {
 		return nom;
 	}
@@ -29,5 +35,19 @@ public class Animal {
 		this.type = type;
 	}
 
+	public String getRegimesAlimentaires() {
+		return regimesAlimentaires;
+	}
+
+	public void setRegimesAlimentaires(String regimesAlimentaires) {
+		this.regimesAlimentaires = regimesAlimentaires;
+	}
+
+	@Override
+	public String toString() {
+		return "Animal [nom=" + nom + ", type=" + type + "]";
+	}
+	
+	
 }
 

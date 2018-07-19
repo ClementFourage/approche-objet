@@ -21,14 +21,20 @@ public class Zone {
 		}
 	}
 	
+	public void afficher(){
+		for (int i=0; i<animaux.length; i++){
+			if (animaux[i]!= null){
+				System.out.println(animaux[i]);
+			}
+		}
+	}
+	
 	public int getCompteur() {
 		return compteur;
 	}
-
 	public void setCompteur(int compteur) {
 		this.compteur = compteur;
 	}
-
 	public String getNom() {
 		return nom;
 	}

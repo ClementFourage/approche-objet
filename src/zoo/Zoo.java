@@ -19,6 +19,27 @@ public class Zoo {
 		
 	}
 	
+	public void addAnimal(Animal animal) {
+		if (animal.getRegimesAlimentaires().equals("CARNIVORE") && animal.getFamille().equals("MAMMIFERES")){
+			carnivore.addAnimal(animal);
+		} else if (animal.getRegimesAlimentaires().equals("HERBIVORE") && animal.getFamille().equals("MAMMIFERES")){
+			savane.addAnimal(animal);
+		} else if(animal.getFamille().equals("POISSONS")){
+			aquarium.addAnimal(animal);
+		} else if (animal.getFamille().equals("REPTILES")){
+			reptiles.addAnimal(animal);
+		}
+	}
+	
+
+	public void afficher() {
+		savane.afficher();
+		carnivore.afficher();
+		aquarium.afficher();
+		reptiles.afficher();
+		voliere.afficher();
+	}
+	
 	
 	public String getNom() {
 		return nom;
@@ -56,5 +77,5 @@ public class Zoo {
 	public void setVoliere(Zone voliere) {
 		this.voliere = voliere;
 	}
-	
+
 }
