@@ -41,8 +41,11 @@ public class TestMapPays {
 		if(pays.containsKey(choix)) {
 			System.out.println("Nom du pays : "+pays.get(choix).getNom());
 			System.out.println("Nombre d’habitants : "+pays.get(choix).getHabitants());
-			System.out.println("PIB/habitant : "+pays.get(choix).getPib());
-			System.out.println("PIB total : "+pays.get(choix).getCalculPIB());
+			System.out.println("PIB : "+pays.get(choix).getPib()+ " $ par habitants");
+			System.out.println("PIB total : "+pays.get(choix).getCalculPIB()+ " $");
+		}
+			else if (!pays.containsKey(choix)) {
+				System.out.println("Ce pays n'existe pas, entrez un nouveau code pays :");
 		}
 		
 		scan.close();
