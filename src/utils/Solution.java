@@ -18,6 +18,8 @@ public class Solution {
 			return false;
 	}
 
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	
 	public static String reverse(String s) {
 		if (s.length() > 0)
 			return s.charAt(s.length() - 1) + reverse(s.substring(0, s.length() - 1));
@@ -25,6 +27,8 @@ public class Solution {
 			return "";
 	}
 
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	
 	public int levenshtein(String x, String y) {
 		if (x.isEmpty()) {
 			return y.length();
@@ -41,10 +45,14 @@ public class Solution {
 		return min(substitution, insertion, deletion);
 	}
 
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	
 	public int costOfSubstitution(char a, char b) {
 		return a == b ? 0 : 1;
 	}
 
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	
 	public int min(int... numbers) {
 		return Arrays.stream(numbers).min().orElse(Integer.MAX_VALUE);
 	}

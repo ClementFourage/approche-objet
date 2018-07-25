@@ -40,7 +40,7 @@ public class TestStringUtils {
 //Exercice 2.4 : invoquer cette méthode ----------------------------------------------------------------------------------------------------------------------------------------------
 		
 		StringUtils s3 = new StringUtils();
-		String y = s3.toString("Oui");
+		String y = s3.toString(3);
 		
 		System.out.println(y);
 		
